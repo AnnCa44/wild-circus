@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <title>Prix et Réservation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="../static/style.css">
-
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../static/price-contact.css">
 </head>
-    <h2>Prix</h2>
+    <h2 class="price">Prix</h2>
     <div class="tablePrice">
         <table style="text-align:center">
             <thead>
             <tr>
                 <th class="hidden"></th>
-                <th>Adults</th>
-                <th>Enfants de -10ans</th>
-                <th>Groupes de +10 de personnes</th>
+                <th>Adultes</th>
+                <th>Enfants < 10 ans</th>
+                <th>Groupes > 10 personnes</th>
                 <th>Écoles</th>
             </tr>
             </thead>
@@ -38,6 +38,20 @@
     </table>
     </div>
     <h2>Réservation ou Contact</h2>
-
+        <form action="/" method="post">
+            <div>
+                <label for="name">Nom&Prénom</label>
+                <input type="text" id="name" name="user_name">
+            </div>
+            <div>
+                <label for="mail">E-mail</label>
+                <input type="email" id="mail" name="user_mail">
+            </div>
+            <div>
+                <label for="msg">Message</label>
+                <textarea id="msg" name="user_message" placeholder="Vous pouvez écrire ici."></textarea>
+            </div>
+            <input type="submit" name="send" value="Envoyer">
+        </form>
 </body>
 </html>
