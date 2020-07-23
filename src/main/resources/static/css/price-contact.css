@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Monserrat', cursive;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-top: 6rem;
+    text-align: center;
+    color: #ff0000;
+    text-shadow: 3px 0 #000, 0 2px #000,
+    1px 0 #000, 0 -1px #000;
+}
+
+div.subtitle {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Monserrat', cursive;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #ff0000;
+}
+
+h2 {
+    margin-top: 4rem;
+}
+
+table {
+    border-collapse: separate;
+    width: 40%;
+    margin: auto;
+    border-style: none;
+}
+
+tfoot {
+    color: #fff;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+th {
+    font-family: 'PT mono', sans-serif;
+    width: 70%;
+    padding: 30px;
+    border-radius: 4rem 1rem;
+    border-style: none;
+    background-color: #000;
+}
+
+table {
+    color: #ffffff;
+}
+
+td {
+    font-family: 'PT mono', sans-serif;
+    font-weight: bold;
+    width: 10%;
+    padding: 35px;
+    text-align: center;
+    background-color: #000;
+    border-radius: 4rem 1rem;
+    border-style: none;
+}
+
+form {
+    text-align: center;
+    margin: 0 auto;
+    width: 40rem;
+    padding: 2rem;
+    border: 3px solid #000;
+    border-radius: 3rem;
+    background-image: url("https://cdn.pixabay.com/photo/2017/10/23/16/04/milky-way-2881461_960_720.jpg");
+}
+
+form div + div {
+    margin-top: 1rem;
+}
+label {
+    display: inline-block;
+    width: 200px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 0.5rem;
+}
+
+.send {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+}
+
+#name #mail #msg{
+    margin-top: 0.5rem;
+}
+
+textarea {
+    vertical-align: top;
+    height: 6rem;
+}
+
+.icon {
+    width: 4rem;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+.grid-container {
+    display: grid;
+    margin-top: 6rem;
+    margin-left: 3rem;
+    font-weight: bold;
+    align-content: flex-end;
+    height: 2rem;
+    color: #000;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "wildCircus wcs linkedin github franceIoI date";
+}
+
+.wildCircus {
+    grid-area: wildCircus;
+}
+
+.wcs {
+    grid-area: wcs; }
+
+.linkedin {
+    grid-area: linkedin; }
+
+.github {
+    grid-area: github; }
+
+.franceIoI {
+    grid-area: franceIoI; }
+
+.date {
+    grid-area: date; }
+
