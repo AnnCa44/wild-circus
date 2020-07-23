@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Ajout d'une Performance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/add-article.css">
 </head>
 <body>
     <h2>Ajout d'une Performance</h2>
-        <div>
+        <div class="subtitle1">
             <span>Rempli ces champs pour afficher une nouvelle performance</span>
         </div>
         <div>
             <form th:action="@{/add-article}" method="post" th:object="${article}">
                 <input th:field="*{id}" type="hidden" name="idPerf">
                 <div class="perf">
-                    <input th:field="*{performance}" type="text" placeholder="Performance">
+                    <input th:field="*{performance}" id="performance" type="text" placeholder="Performance">
                 </div>
                 <div  class="imagePerf">
                     <input th:field="*{image}" id="imagePerf" type="url" placeholder="Url de l'image">
                 </div>
                 <div class="description">
-                    <input th:field="*{description}" type="text" placeholder="Description">
+                    <input th:field="*{description}" id="description" type="text" placeholder="Description">
                 </div>
                 <div class="button-save">
                     <input type="submit" name="send" value="Enregistrer">

@@ -18,9 +18,7 @@ public class MainController {
     @GetMapping("/")
     public String index(Model out) {
 
-
-        out.addAttribute("articles", articleRepository.findAll());
-
+        out.addAttribute("articles", articleRepository.findAll().subList(0,3));
         return "index";
     }
 

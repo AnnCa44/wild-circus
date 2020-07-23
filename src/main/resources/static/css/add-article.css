@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Monserrat', cursive;
+}
+
+body {
+    background-image: url("https://image.freepik.com/vecteurs-libre/fond-degrade-couleurs-degrade-vert-gris-marron_7190-651.jpg");
+    background-size: cover;
+}
+
+h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 3rem;
+    color: #fff;
+    text-shadow: 3px 3px 1px #000;
+}
+
+div.subtitle1 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    margin-top: 5rem;
+    border: 2px solid #000;
+    border-radius: 4rem;
+    width: 25rem;
+    height: 14rem;
+    padding-top: 4rem;
+    background-color: #E0E0E0;
+}
+
+div.button-save {
+    margin-top: 1rem;
+}
+
+div.button-save input {
+    margin-top: 1rem;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: 2px solid #000;
+}
+
+#performance, #imagePerf, #description {
+    width: 20em;
+    height: 25px;
+}
+
+#imagePerf, #description {
+    margin-top: 1rem;
+}
