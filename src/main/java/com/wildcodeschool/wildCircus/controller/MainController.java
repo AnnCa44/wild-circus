@@ -69,7 +69,6 @@ public class MainController {
 
         MimeMessage msg = javaMailSender.createMimeMessage();
 
-        // true = multipart message
         MimeMessageHelper helper = new MimeMessageHelper(msg, false);
 
         helper.setTo(name);
