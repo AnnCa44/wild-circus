@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajout d'une Performance</title>
+</head>
+<body>
+    <h2>Ajout d'une Performance</h2>
+        <div>
+            <span>Rempli ces champs pour afficher une nouvelle performance</span>
+        </div>
+        <div>
+            <form th:action="@{/add-article}" method="post" th:object="${article}">
+                <input th:field="*{id}" type="hidden" name="idPerf">
+                <div class="perf">
+                    <input th:field="*{performance}" type="text" placeholder="Performance">
+                </div>
+                <div  class="imagePerf">
+                    <input th:field="*{image}" id="imagePerf" type="url" placeholder="Url de l'image">
+                </div>
+                <div class="description">
+                    <input th:field="*{description}" type="text" placeholder="Description">
+                </div>
+                <div class="button-save">
+                    <input type="submit" name="send" value="Enregistrer">
+                </div>
+            </form>
+        </div>
+</body>
+</html>

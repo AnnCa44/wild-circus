@@ -74,6 +74,8 @@ h3 {
 
 .grid-container {
     display: grid;
+    margin: auto;
+    width: 80%;
     margin-top: 4rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -112,33 +114,6 @@ h3 {
     grid-area: third;
     margin-left: 2rem;
 
-}
-
-.form-addNewphoto {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-.form-addNewphoto-back {
-    margin: 0.5rem;
-    width: 230px;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 25px;
-    transition: box-shadow 1s;
-}
-
-.form-addNewphoto-next {
-    margin: 0.5rem;
-    width: 230px;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 25px;
-    transition: box-shadow 1s;
 }
 
 .grid-container1 {
@@ -185,9 +160,32 @@ div.wildCircus p, div.date p{
     font-weight: bold;
 }
 
-p {
-    text-align: justify;
-    margin-right: 6rem;
+div.grid-container div p {
+    margin: 2em;
+    margin-left: 1em;
+}
+
+.titlePerf {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    border: 2px solid #000;
+    border-radius: 2rem;
+    width: 15rem;
+    height: 8rem;
+    padding-top: 2rem;
+}
+
+div.button-save {
+    margin-top: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
