@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>Wild Circus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <header>
     <nav>
         <ul id="navbar">
             <li><img src="https://img.icons8.com/doodle/48/000000/elephant-circus.png" alt="elephant"></li>
-            <li><a href="#Performances">Performances</a></li>
-            <li><a href="#AboutUs">A propos</a></li>
+            <li><a href="#Perf">Performances</a></li>
+            <li><a href="#AboutUs">À propos</a></li>
             <li><a href="#Prices">Prix</a></li>
             <li><a href="#Contact">Contact</a></li>
         </ul>
@@ -23,17 +23,17 @@
         <span>"Le cirque est un monde où chacun crée le sien"</span>
     </div>
     <div class="big-container">
-        <div class="container">
-            <h2>Performances</h2>
-                <div class="grp-perf" >
-                     <h3>Rires</h3>
-                    <img src="https://www.spectable.com/image/image/x/cie-les-tetes-de-clowns-la-fee-des-gueux-par_514819.jpg"
+        <h2 id="perf">Performances</h2>
+            <div class="grid-container">
+                <div id="first" class="first">
+                    <h3>Rires</h3>
+                        <img src="https://www.spectable.com/image/image/x/cie-les-tetes-de-clowns-la-fee-des-gueux-par_514819.jpg"
                          alt="two clowns"
                          height="200"
-                         width="320">
+                         width="350">
                     <p> As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.</p>
                 </div>
-                <div class="grp-perf">
+                <div class="second">
                     <h3>Rêver</h3>
                     <img src="https://france3-regions.francetvinfo.fr/auvergne-rhone-alpes/sites/regions_france3/files/styles/top_big/public/assets/images/2019/01/25/alpexpress-maxppp-4057891.jpg?itok=wkZgwALE"
                          alt="levitation"
@@ -41,23 +41,34 @@
                          width="350">
                     <p>Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.</p>
                 </div>
-                <div class="grp-perf">
+                <div class="third">
                     <h3>S'émerveiller</h3>
                     <img src="https://www.neozone.org/blog/wp-content/uploads/2019/05/animaux-sauvages-cirques-002-750x400.jpg"
                          alt="lion"                                             height="200"
                          width="350">
                     <p>Tame the untameable in the company of our tamers, between roar and razor-sharp claws, watch these fierce felines turn into sweet kittens.</p>
                 </div>
-        </div>
-        <div id="sect-about">
-            <h2>About Us</h2>
-            <div class="article">
-                <img class="art-left" src="http://www.en-noir-et-blanc.com/1-images/Les%20femmes%20du%20cirque%20en%201942.jpg"
-                     alt="four sisters"/>
-                <p class="art-right"> Created in Poland in 1926 by four Grzegorczyk sisters: Wanda, Iga, Lucja and Dominika, called the WILD sisters. Our circus has always been growing over the generations, giving more and more of their passion and love for circus. Each has her speciality that they transmitted to their children and grand-children.                The family knows how to mix tradition and innovation to pleased the most of people and so has acquired an international renown ! </p>
             </div>
-        </div>
-    </section>
+            <div class="form-addNewphoto">
+                <form action="/" method="post">
+                    <input class="form-addNewphoto-back" type="submit" name="back" value="Articles précédents">
+                    <input type="hidden" name="count">
+                </form>
+                <form action="/" method="post">
+                    <input class="form-addNewphoto-next" type="submit" name="next" value="Articles suivants">
+                    <input type="hidden" name="count">
+                </form>
+            </div>
     </div>
+    <footer>
+        <div class="grid-container1">
+            <div class="wildCircus"><p>Wild Circus by Anne Cariou</p></div>
+            <div class="wcs"><a href="https://www.wildcodeschool.com/" title="Clique ici pour nous rejoindre !!">Wild Code School</a></div>
+            <div class="linkedin"><a target="blank" href="https://www.linkedin.com/in/anne-cariou/">LinkedIn</a></div>
+            <div class="github"><a target="blank" href="https://github.com/AnnCa44">Github</a></div>
+            <div class="franceIoI"><a target="blank" href="http://www.france-ioi.org/user/perso.php?sLogin=annca">France IOI</a></div>
+            <div class="date"><p>Wild Code school 22/07/2020</p></div>
+        </div>
+    </footer>
 </body>
 </html>

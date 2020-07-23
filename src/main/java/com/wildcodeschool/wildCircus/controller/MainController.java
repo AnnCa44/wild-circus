@@ -12,8 +12,9 @@ public class MainController {
         return "index";
     }
 
+    @GetMapping("price-contact")
+    public String priceContact() {
 
-
-
-
+        return "price-contact";
+    }
 }

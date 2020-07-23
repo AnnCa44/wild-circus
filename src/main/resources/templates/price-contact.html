@@ -1,57 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Prix et Réservation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="../static/price-contact.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/price-contact.css">
 </head>
-    <h2 class="price">Prix</h2>
-    <div class="tablePrice">
-        <table style="text-align:center">
-            <thead>
-            <tr>
-                <th class="hidden"></th>
-                <th>Adultes</th>
-                <th>Enfants < 10 ans</th>
-                <th>Groupes > 10 personnes</th>
-                <th>Écoles</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td id="weeks-off">Semaines hors mercredi</td>
-                <td>20 €</td>
-                <td>15 €</td>
-                <td>13 €</td>
-                <td>10 €</td>
-            </tr>
-            <tr>
-                <td id="weeks-and">week-end et mercredi</td>
-                <td>25 €</td>
-                <td>20 €</td>
-                <td>18 €</td>
-                <td>10 €</td>
-            </tr>
-            </tbody>
-    </table>
+<body>
+    <a href="/index"><img class="icon" src="https://img.icons8.com/doodle/48/000000/elephant-circus.png" alt="elephant"></a>
+        <h2 class="price">Prix</h2>
+        <div class="tablePrice">
+            <table style="text-align:center">
+                <thead>
+                <tr>
+                    <th class="hidden"></th>
+                    <th>Adultes</th>
+                    <th>Enfants < 10 ans</th>
+                    <th>Groupes > 10 personnes</th>
+                    <th>Écoles</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td id="weeks-off">Semaines hors mercredi</td>
+                    <td>20 €</td>
+                    <td>15 €</td>
+                    <td>13 €</td>
+                    <td>10 €</td>
+                </tr>
+                <tr>
+                    <td id="weeks-and">Week-end et mercredi</td>
+                    <td>25 €</td>
+                    <td>20 €</td>
+                    <td>18 €</td>
+                    <td>10 €</td>
+                </tr>
+                </tbody>
+        </table>
+        </div>
+        <h2>Réservation ou Contact</h2>
+            <div class="subtitle">
+                <span>Pour réserver un où plusieurs billets n'hésitez par à remplir le formulaire ci dessous.</span>
+            </div>
+            <div class="formulaire">
+                <form action="/" method="post">
+                    <div>
+                        <label for="name">Nom&Prénom</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+                    <div>
+                        <label for="mail">E-mail</label>
+                        <input class="mail" type="email" id="mail" name="user_mail">
+                    </div>
+                    <div>
+                        <label for="msg">Message</label>
+                        <textarea id="msg" name="user_message" placeholder="Vous pouvez écrire ici."></textarea>
+                    </div>
+                    <input class="send" type="submit" name="send" value="Envoyer">
+                </form>
+            </div>
+<footer>
+    <div class="grid-container">
+        <div class="wildCircus"><p>Wild Circus by Anne Cariou</p></div>
+        <div class="wcs"><a href="https://www.wildcodeschool.com/" title="Clique ici pour nous rejoindre !!">Wild Code School</a></div>
+        <div class="linkedin"><a target="blank" href="https://www.linkedin.com/in/anne-cariou/">LinkedIn</a></div>
+        <div class="github"><a target="blank" href="https://github.com/AnnCa44">Github</a></div>
+        <div class="franceIoI"><a target="blank" href="http://www.france-ioi.org/user/perso.php?sLogin=annca">France IOI</a></div>
+        <div class="date"><p>Wild Code school 22/07/2020</p></div>
     </div>
-    <h2>Réservation ou Contact</h2>
-        <form action="/" method="post">
-            <div>
-                <label for="name">Nom&Prénom</label>
-                <input type="text" id="name" name="user_name">
-            </div>
-            <div>
-                <label for="mail">E-mail</label>
-                <input type="email" id="mail" name="user_mail">
-            </div>
-            <div>
-                <label for="msg">Message</label>
-                <textarea id="msg" name="user_message" placeholder="Vous pouvez écrire ici."></textarea>
-            </div>
-            <input type="submit" name="send" value="Envoyer">
-        </form>
+</footer>
 </body>
 </html>

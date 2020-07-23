@@ -1,5 +1,7 @@
 package com.wildcodeschool.wildCircus.entity;
 
+import org.hibernate.annotations.Type;
+
 import javax.persistence.*;
 
 @Entity
@@ -14,6 +16,7 @@ public class Article {
     private String image;
 
     @Column
+    @Type(type = "text")
     private String text;
 
     @Column

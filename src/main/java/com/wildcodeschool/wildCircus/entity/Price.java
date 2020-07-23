@@ -13,6 +13,15 @@ public class Price {
     @Column
     private Integer cost;
 
+    @ManyToOne
+    @JoinColumn(name = "timerange_id")
+    private Timerange timerange;
+
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
+
+
     public Price() {
     }
 
