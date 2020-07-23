@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Prix et Réservation</title>
@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="/css/price-contact.css">
 </head>
 <body>
-    <a href="/"><img class="icon" src="https://img.icons8.com/doodle/48/000000/elephant-circus.png" alt="elephant"></a>
+<header th:replace="nav.html :: nav-barCircus"></header>
+    <a href="/"></a>
         <h2 id="Prices" class="price">Prix</h2>
         <div  class="tablePrice">
             <table style="text-align:center">

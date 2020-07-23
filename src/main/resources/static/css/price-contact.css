@@ -6,11 +6,15 @@
 
 h2 {
     font-size: 4rem;
-    margin-top: 6rem;
+    margin-top: 2rem;
     text-align: center;
     color: #ff0000;
     text-shadow: 3px 0 #000, 0 2px #000,
     1px 0 #000, 0 -1px #000;
+}
+
+h2.price {
+    margin-top: 2rem;
 }
 
 div.subtitle {
@@ -124,14 +128,16 @@ ul, li{
     display: grid;
     margin-top: 6rem;
     margin-left: 3rem;
-    font-weight: bold;
     align-content: flex-end;
     height: 2rem;
-    color: #000;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 1px 1px;
     grid-template-areas: "wildCircus wcs linkedin github franceIoI date";
+}
+
+.grid-container a{
+    color: #fff;
 }
 
 .wildCircus {
@@ -152,9 +158,3 @@ ul, li{
 
 .date {
     grid-area: date; }
-
-footer {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}

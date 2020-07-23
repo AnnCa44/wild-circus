@@ -7,16 +7,7 @@
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/68562b10c3.js"></script>
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<header>
-    <nav>
-        <ul id="navbar">
-            <li><a href="#Perf">Performances</a></li>
-            <li><a href="#AboutUs">À propos</a></li>
-            <li><a href="/price-contact">Prix</a></li>
-            <li><a href="/price-contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+<header th:replace="nav.html :: nav-barCircus"></header>
 <body>
     <h1>Wild Circus</h1>
     <div class="subtitle">
@@ -44,7 +35,7 @@
             <div class="none"></div>
             <div class="nothing"></div>
             <div class="photo">
-                <img src="images/sisters.jpg";>
+                <img src="images/sisters.jpg">
             </div>
             <div>
                 <p>Créée en Pologne en 1926 par quatre sœurs Grzegorczyk: Wanda, Iga, Lucja et Dominika, appelées
