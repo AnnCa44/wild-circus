@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Wild Circus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/68562b10c3.js"></script>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <header>
@@ -11,8 +12,8 @@
         <ul id="navbar">
             <li><a href="#Perf">Performances</a></li>
             <li><a href="#AboutUs">À propos</a></li>
-            <li><a href="#Prices">Prix</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a href="/price-contact">Prix</a></li>
+            <li><a href="/price-contact">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -33,14 +34,29 @@
                     <p th:text="${article.getDescription()}">As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.</p>
                 </div>
             </div>
-        <div class="addPerf">
             <div class="titlePerf">
-                <a href="/add-article"><span>Ajoutez un Article</span></a>
+                <a href="/add-article">Ajoutez un Article<i class="fas fa-arrow-right"></i></a>
+            </div>
+    </div>
+    <h2>À propos de nous</h2>
+    <div id="AboutUs" class="Us">
+        <div class="grid-container">
+            <div class="none"></div>
+            <div class="nothing"></div>
+            <div class="photo">
+                <img src="images/sisters.jpg";>
+            </div>
+            <div>
+                <p>Créée en Pologne en 1926 par quatre sœurs Grzegorczyk: Wanda, Iga, Lucja et Dominika, appelées
+                   les sœurs WILD. Notre cirque a toujours grandi au fil des générations, donnant de plus en plus de
+                   leur passion et de leur amour pour le cirque. Chacun a sa spécialité qu'ils ont transmise à leurs
+                   enfants et petits-enfants. La famille sait allier tradition et innovation pour plaire au plus grand
+                   nombre et a ainsi acquis une renommée internationale.</p>
             </div>
         </div>
     </div>
     <footer>
-        <div class="grid-container1">
+       <div class="grid-container1">
             <div class="wildCircus"><p>Wild Circus by Anne Cariou</p></div>
             <div class="wcs"><a href="https://www.wildcodeschool.com/" title="Clique ici pour nous rejoindre !!">Wild Code School</a></div>
             <div class="linkedin"><a target="blank" href="https://www.linkedin.com/in/anne-cariou/">LinkedIn</a></div>

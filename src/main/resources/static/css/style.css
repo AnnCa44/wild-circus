@@ -74,6 +74,28 @@ h3 {
     text-align: center;
 }
 
+div.titlePerf {
+    background-color: #ffffff;
+    margin-left: 37rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    border: 1px solid #000;
+    width: 14rem;
+    height: 2rem;
+    color: #ffffff;
+}
+
+div.titlePerf a {
+    text-decoration: none;
+    color: #000;
+}
+
+i {
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
+    color: #ff0000;
+}
+
 .grid-container {
     display: grid;
     margin: auto;
@@ -172,6 +194,29 @@ div.grid-container div p {
     margin-bottom: 2rem;
     text-align: center;
     font-size: 1.5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 20px;
+    grid-template-areas: "none photo aboutUs nothing";
+}
+
+.none { grid-area: none; }
+
+.nothing { grid-area: nothing; }
+
+.photo { grid-area: photo; }
+
+.aboutUs { grid-area: aboutUs; }
+
+
+div.photo img {
+    border-radius: 2rem;
+    height: 25rem;
+    width: 15rem;
 }
 
 @media only screen and (min-width: 768px) {
