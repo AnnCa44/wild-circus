@@ -58,6 +58,8 @@ body{
     font-family: 'Monserrat', cursive;
     background-color:#fff;
     color: #000;
+    background-image: url("https://cdn.allwallpaper.in/wallpapers/706x400/280/blue-minimalistic-dark-multicolor-textures-windows-8-backgrounds-706x400-wallpaper.jpg");
+    background-size: cover;
 }
 
 nav ul a {
@@ -170,22 +172,6 @@ div.grid-container div p {
     margin-bottom: 2rem;
     text-align: center;
     font-size: 1.5rem;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-    border: 2px solid #000;
-    border-radius: 2rem;
-    width: 15rem;
-    height: 8rem;
-    padding-top: 2rem;
-}
-
-div.button-save {
-    margin-top: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
